@@ -61,7 +61,7 @@ logs-cleanup:
 		echo "Очистка логов отменена"; \
 	fi
 
-todoapp-run:
+chatgoapp-run:
 	@export LOGGER_FOLDER=$(PROJECT_ROOT)/out/logs && \
 	export POSTGRES_HOST=localhost && \
 	go mod tidy && \
@@ -84,4 +84,5 @@ swagger-gen:
 ps:
 	@docker compose ps
 
-# sudo chmod -R 755 /home/aram/Desktop/GoProjects/Semi-Prod-ToDoList/out/pgdata
+perms:
+	@sudo chmod -R 755 $(PROJECT_ROOT)/out

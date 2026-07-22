@@ -1,4 +1,4 @@
-CREATE SCHEMA chatgo;
+CREATE SCHEMA IF NOT EXISTS chatgo;
 
 CREATE TABLE IF NOT EXISTS chatgo.users (
     id            SERIAL PRIMARY KEY,
