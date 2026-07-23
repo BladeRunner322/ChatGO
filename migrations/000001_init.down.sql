@@ -1,2 +1,3 @@
 DROP TABLE IF EXISTS chatgo.messages;
 DROP TABLE IF EXISTS chatgo.users;
+DROP SCHEMA IF EXISTS chatgo;
