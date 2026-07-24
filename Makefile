@@ -85,4 +85,5 @@ ps:
 	@docker compose ps
 
 perms:
-	@sudo chmod -R 755 $(PROJECT_ROOT)/out
+	@sudo chown -R $(USER):$(USER) $(PROJECT_ROOT)/out
+	@sudo chown -R $(USER):$(USER) $(PROJECT_ROOT)/migrations
